@@ -1,0 +1,44 @@
+.Header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #340338;
+    height: 100px;
+    position: sticky;
+    z-index: 3;
+    top: 0;
+
+}
+
+.Header a {
+    text-decoration: none;
+    color: snow;
+    font-size: 40px;
+}
+.MovieDb{
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color: #ff007f;
+}
+
+.Links{
+    display: flex;
+    gap: 25px;
+}
+
+.Links a:hover{
+    font-size: 45px;
+    transition: 3ms;
+    color: #ff007f;
+}
+/*.Header a:hover {*/
+
+/*    color: hotpink;*/
+
+/*}*/
+
+.Switchr{
+    font-family: "Henny Penny", cursive;
+}
