@@ -4,14 +4,16 @@ import {FormControlLabel, Switch} from "@mui/material";
 import css from './Header.module.css'
 import {useAppDispatch, useAppSelector} from "../../hooks";
 import {headerActions} from '../../store'
+import {SearchForm} from "../SearchForm";
+import {UserInfo} from "../UserInfo";
 
 const Header = () => {
 
     const dispatch = useAppDispatch()
-    const {switcher} = useAppSelector(state => state.header)
+    const {switcher, trigger} = useAppSelector(state => state.header)
     console.log(switcher)
 
-    const handleChange = () => {
+    const handleChange: () => void = () => {
         dispatch(headerActions.setSwitcher())
     }
 
@@ -28,11 +30,18 @@ const Header = () => {
             <div className={css.Links}>
                 <NavLink to={'movies'}>Movies</NavLink>
                 <NavLink to={'genres'}>Genres</NavLink>
+                <NavLink to={'#'} onClick={() => dispatch(headerActions.setTrigger())}>Search</NavLink>
             </div>
-            <div className={css.Switchr}>
-                <FormControlLabel
+            <div className={css.SearchForm}>
+                {trigger && <SearchForm/>}
+            </div>
+            <div>
+                <FormControlLabel className={css.Switch}
                     control={<Switch onChange={handleChange}/>}
                     label="Dark mode"/>
+            </div>
+            <div>
+                <UserInfo/>
             </div>
         </div>
     );

@@ -1,1 +1,5 @@
+export * from './GenresContainer'
 export * from './Header'
+export * from './MoviesContainer'
+export * from './SearchForm'
+export * from './UserInfo'

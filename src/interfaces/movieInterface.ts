@@ -1,5 +1,7 @@
+import {IGenre} from "./genreInterface";
+
 export interface IMovie {
-    // genres: IGenre[]
+    genres: IGenre[]
     poster_path: string
     id: number
     original_language: string
@@ -8,4 +10,7 @@ export interface IMovie {
     overview: string
     title: string
     vote_average: number
+    homepage: string
+    runtime: number
+    tagline: string
 }

@@ -6,11 +6,11 @@ import {genreService} from "../../services";
 
 
 interface IState {
-    genresList: IGenre[]
+    genresList: {genres:IGenre[]}
 }
 
 const initialState: IState = {
-    genresList: null
+    genresList: {genres:[]}
 }
 
 const getAll = createAsyncThunk<{ genres: IGenre[] }, void>(
@@ -36,7 +36,7 @@ const genreSlice = createSlice({
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled,  (state, action) => {
-                state.genresList = action.payload.genres
+                state.genresList.genres = action.payload.genres
                 }
             )
     })

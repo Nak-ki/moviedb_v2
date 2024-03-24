@@ -1,0 +1,52 @@
+.MovieList{
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin-left: 10px;
+    font-family: "Comic Neue", cursive;
+
+}
+
+.MovieList div{
+    width: 500px;
+    padding: 15px;
+
+}
+
+.PaginationLight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.PaginationLight button{
+    color: #b6075a;
+}
+
+.PaginationLight button:hover{
+    color: #340338;
+}
+
+.PaginationDark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.PaginationDark button:hover{
+    color: #f3a1c4;
+}
+.PaginationDark button:active{
+    color: #b6075a;
+}
+
+.PaginationDark button{
+    color: #d86d82;
+
+
+}
+.PaginationDark div{
+    color: #d86d82;
+}

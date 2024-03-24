@@ -16,7 +16,7 @@
     font-size: 40px;
 }
 .MovieDb{
-    font-family: "Henny Penny", system-ui;
+    font-family: "Henny Penny", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 70px;
@@ -33,12 +33,18 @@
     transition: 3ms;
     color: #ff007f;
 }
-/*.Header a:hover {*/
 
-/*    color: hotpink;*/
+.Switch{
+    font-family: "Comic Neue", cursive;
+    font-size: 20px;
+    color:  #ff007f;
 
-/*}*/
 
-.Switchr{
-    font-family: "Henny Penny", cursive;
 }
+
+.SearchForm input{
+    background: antiquewhite;
+    padding: 4px;
+    font-family: "Comic Neue", cursive;
+}
+

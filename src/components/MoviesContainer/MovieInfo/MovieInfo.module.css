@@ -1,0 +1,62 @@
+.Main{
+    margin-left: 10px;
+    display: flex;
+    gap: 40px;
+    /*justify-content: space-around;*/
+    margin-top: 10px;
+}
+
+
+.Poster{
+    border: #d86d82 3px solid;
+    width: 1120px;
+    padding: 10px 15px 10px 10px;
+    background: #d86d82;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.Info {
+    border: #340338 3px solid;
+    text-decoration: none;
+    width: 3000px;
+    margin-right: 10px;
+    /*color: #b6075a;*/
+    border-radius: 10px;
+
+}
+
+.Rate{
+    margin-left: 20px;
+
+}
+
+.Badgee{
+    margin-left: 40px;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+h1{
+    font-size: 45px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+p{
+    font-family: "Comic Neue", cursive;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+article{
+    font-family: "Comic Neue", cursive;
+    margin-left: 20px;
+    font-size: 30px;
+}

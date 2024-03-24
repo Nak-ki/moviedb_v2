@@ -1,0 +1,27 @@
+.MovieCard{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: #f3a1c4 2px solid;
+    color: #b6075a;
+}
+.MovieCard:hover{
+    border-radius: 20px;
+    border: #b6075a 3px solid;
+    transition: 2ms;
+    background: #7f152b;
+    color: #f3a1c4;
+}
+
+.Poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

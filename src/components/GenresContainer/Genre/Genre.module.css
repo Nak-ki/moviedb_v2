@@ -1,0 +1,28 @@
+.Genre{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Henny Penny", cursive;
+    font-size: 40px;
+    margin-top: 20px;
+    border: #340338 4px solid;
+    border-radius: 50%;
+    background: 	#d86d82;
+
+}
+
+.Genre a{
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    text-decoration: none;
+    color: #a52a2a;
+}
+
+.Genre a:hover{
+
+    color: #340338;
+    font-size: 45px;
+    transition: 2ms;
+}
